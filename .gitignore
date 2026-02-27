@@ -1,1 +1,16 @@
+# Build artifacts
 dist/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Editor
+*.swp
+*.swo
+*~

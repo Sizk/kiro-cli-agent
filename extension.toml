@@ -12,12 +12,15 @@ icon = "./icon/kiro-cli-agent.svg"
 
 [agent_servers.kiro-cli-agent.targets.darwin-aarch64]
 archive = "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-darwin-arm64.tar.gz"
+sha256 = "7e3d7ab3e28bef122aed264618a0f6e606fe4c5c0932b1cb82056f3500dd7249"
 cmd = "./kiro-cli-wrapper.sh"
 
 [agent_servers.kiro-cli-agent.targets.linux-x86_64]
 archive = "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-linux-x64.tar.gz"
+sha256 = "7e3d7ab3e28bef122aed264618a0f6e606fe4c5c0932b1cb82056f3500dd7249"
 cmd = "./kiro-cli-wrapper.sh"
 
 [agent_servers.kiro-cli-agent.targets.linux-aarch64]
 archive = "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-linux-arm64.tar.gz"
+sha256 = "7e3d7ab3e28bef122aed264618a0f6e606fe4c5c0932b1cb82056f3500dd7249"
 cmd = "./kiro-cli-wrapper.sh"

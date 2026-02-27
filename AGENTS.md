@@ -75,11 +75,36 @@ No hardcoded colors (`#hex`, `red`, `rgb(...)`) -- only `fill="currentColor"`,
 
 ## Local development and testing
 
-1. Open Zed, run `zed: install dev extension`, select this repo directory.
-2. Open the Agent Panel (`Cmd-?` / `Ctrl-?`).
-3. Click `+` and select "Kiro CLI Agent" from the list.
-4. Authenticate when prompted (browser-based OAuth flow).
-5. Verify the agent responds to a test prompt.
+### Stage 1 -- Test ACP communication (no extension needed)
+
+Add Kiro as a custom agent in Zed settings (`~/.config/zed/settings.json`):
+
+```json
+{
+  "agent_servers": {
+    "Kiro CLI Agent": {
+      "type": "custom",
+      "command": "kiro-cli",
+      "args": ["acp"],
+      "env": {}
+    }
+  }
+}
+```
+
+Open the Agent Panel (`Cmd-?` / `Ctrl-?`), select "Kiro CLI Agent", and
+authenticate. This validates that `kiro-cli acp` works over ACP before
+involving the extension packaging at all.
+
+### Stage 2 -- Test as a dev extension
+
+Agent Server extensions always download archives from the URLs in
+`extension.toml`, even when installed as dev extensions. You must first
+create a GitHub Release with the archives (see Release workflow), then:
+
+1. Run `zed: install dev extension` and select this repo directory.
+2. Open the Agent Panel, click `+`, select "Kiro CLI Agent".
+3. Verify download, extraction, authentication, and a test prompt.
 
 ### Debugging
 

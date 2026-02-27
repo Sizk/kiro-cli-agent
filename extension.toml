@@ -15,6 +15,11 @@ archive = "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-
 sha256 = "d9c97e8cc046a632fde7fe0ecfbecec21526fc6e1d9b96bc01f292239e977695"
 cmd = "./kiro-cli-wrapper.sh"
 
+[agent_servers.kiro-cli-agent.targets.darwin-x86_64]
+archive = "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-darwin-x64.tar.gz"
+sha256 = "d9c97e8cc046a632fde7fe0ecfbecec21526fc6e1d9b96bc01f292239e977695"
+cmd = "./kiro-cli-wrapper.sh"
+
 [agent_servers.kiro-cli-agent.targets.linux-x86_64]
 archive = "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-linux-x64.tar.gz"
 sha256 = "d9c97e8cc046a632fde7fe0ecfbecec21526fc6e1d9b96bc01f292239e977695"

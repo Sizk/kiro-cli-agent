@@ -16,6 +16,11 @@
         "cmd": "./kiro-cli-wrapper.sh",
         "args": []
       },
+      "darwin-x86_64": {
+        "archive": "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-darwin-x64.tar.gz",
+        "cmd": "./kiro-cli-wrapper.sh",
+        "args": []
+      },
       "linux-x86_64": {
         "archive": "https://github.com/Sizk/kiro-cli-agent/releases/download/v0.1.0/kiro-cli-agent-linux-x64.tar.gz",
         "cmd": "./kiro-cli-wrapper.sh",

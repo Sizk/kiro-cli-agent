@@ -22,6 +22,9 @@ jobs:
           # macOS ARM64
           tar -czf dist/kiro-cli-agent-darwin-arm64.tar.gz -C scripts kiro-cli-wrapper.sh
 
+          # macOS x86_64 (Intel)
+          tar -czf dist/kiro-cli-agent-darwin-x64.tar.gz -C scripts kiro-cli-wrapper.sh
+
           # Linux x86_64
           tar -czf dist/kiro-cli-agent-linux-x64.tar.gz -C scripts kiro-cli-wrapper.sh
 
@@ -40,6 +43,7 @@ jobs:
           generate_release_notes: true
           files: |
             dist/kiro-cli-agent-darwin-arm64.tar.gz
+            dist/kiro-cli-agent-darwin-x64.tar.gz
             dist/kiro-cli-agent-linux-x64.tar.gz
             dist/kiro-cli-agent-linux-arm64.tar.gz
             dist/checksums-sha256.txt

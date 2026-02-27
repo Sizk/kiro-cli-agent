@@ -37,6 +37,8 @@ kiro-cli-agent/
 mkdir -p dist
 # macOS ARM64
 tar -czf dist/kiro-cli-agent-darwin-arm64.tar.gz -C scripts kiro-cli-wrapper.sh
+# macOS x86_64 (Intel)
+tar -czf dist/kiro-cli-agent-darwin-x64.tar.gz -C scripts kiro-cli-wrapper.sh
 # Linux x86_64
 tar -czf dist/kiro-cli-agent-linux-x64.tar.gz -C scripts kiro-cli-wrapper.sh
 # Linux ARM64
@@ -123,7 +125,7 @@ The manifest defines the Zed Agent Server Extension. Key rules:
 - `version`: Semver (`major.minor.patch`). Must match `extensions.toml` entry exactly.
 - Each `[agent_servers.<id>.targets.<platform>]` needs `archive`, `cmd`, and optionally `args`, `env`, `sha256`.
 - `cmd` is relative to extracted archive root (e.g., `./kiro-cli-wrapper.sh`).
-- Supported platforms: `darwin-aarch64`, `linux-x86_64`, `linux-aarch64`.
+- Supported platforms: `darwin-aarch64`, `darwin-x86_64`, `linux-x86_64`, `linux-aarch64`.
   Kiro CLI does not support Windows.
 - Optional `icon` field points to SVG relative to extension root.
 - Optional `env` block sets environment variables for the spawned process.

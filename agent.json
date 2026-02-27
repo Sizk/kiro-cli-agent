@@ -1,6 +1,6 @@
 {
   "id": "kiro-cli-agent",
-  "name": "Kiro CLI Agent",
+  "name": "Kiro CLI",
   "version": "0.1.0",
   "description": "Kiro CLI as a native AI agent via the Agent Client Protocol.",
   "repository": "https://github.com/Sizk/kiro-cli-agent",

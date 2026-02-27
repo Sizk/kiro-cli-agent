@@ -1,5 +1,5 @@
 id = "kiro-cli-agent"
-name = "Kiro CLI Agent"
+name = "Kiro CLI"
 version = "0.1.0"
 schema_version = 1
 authors = ["Sizk <https://github.com/Sizk>"]
@@ -7,7 +7,7 @@ description = "Kiro CLI as a native AI agent in Zed via the Agent Client Protoco
 repository = "https://github.com/Sizk/kiro-cli-agent"
 
 [agent_servers.kiro-cli-agent]
-name = "Kiro CLI Agent"
+name = "Kiro CLI"
 icon = "./icon/kiro-cli-agent.svg"
 
 [agent_servers.kiro-cli-agent.targets.darwin-aarch64]
